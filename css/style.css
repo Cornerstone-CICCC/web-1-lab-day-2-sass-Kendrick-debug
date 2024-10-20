@@ -1,0 +1,97 @@
+header {
+  background-color: yellow;
+  font-size: 25px;
+  padding-inline: 10px;
+}
+header .logo {
+  font-size: 40px;
+  padding-top: 7px;
+  padding-bottom: 0%;
+}
+
+.logo + nav > ul {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 0%;
+  padding-bottom: 7px;
+  list-style-type: none;
+  justify-content: space-between;
+  margin-right: 1090px;
+}
+
+#top > h1 {
+  font-size: 50px;
+}
+
+section > h2 {
+  background-color: cyan;
+  font-size: 40px;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+
+section {
+  padding-inline: 5px;
+}
+
+@media (min-width: 600px) {
+  body {
+    margin: 0%;
+  }
+}
+section h2 + p + .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+section h2 + p + figure > img {
+  max-width: 600px;
+}
+
+.fruit-hover figure > figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: red;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+figure {
+  position: relative;
+  display: inline-block;
+}
+
+.fruit-hover figure:hover > figcaption {
+  opacity: 1;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.back-to-top-btn {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.back-to-top-btn a {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
